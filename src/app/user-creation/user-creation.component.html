@@ -1,0 +1,20 @@
+<form class="container" [formGroup]="userCreationForm" (ngSubmit)="onSubmit()">
+    <div class="user">
+        <div class="row-group"><label>Name</label> <input type="text" formControlName="Name" placeholder="Enter name">
+            <!-- <span class="error" *ngIf="nameHasError"> Name is required</span> -->
+        </div>
+        <div class="row-group"><label>Age</label> <input type="text" formControlName="Age" placeholder="Enter Age">
+        </div>
+        <div class="row-group"><label>Email</label> <input type="text" formControlName="Email"
+                placeholder="Enter email address"></div>
+        <div class="row-group"><label>Address</label> <input type="text" formControlName="Address"
+                placeholder="Enter address"></div>
+        <div class="row-group"><label>Group</label> <input type="text" formControlName="Group"
+                placeholder="Enter group name"></div>
+    </div>
+    <div class="submit">
+        <button type="submit-btn" (click)="onSubmit()">
+            {{ submitButtonName }}
+        </button>
+    </div>
+</form>

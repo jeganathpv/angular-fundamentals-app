@@ -1,0 +1,20 @@
+<div class="container">
+    <section class="users-list">
+        <div class="search">
+            <input type="text" [(ngModel)]="searchText" placeholder="Enter text to search">
+        </div>
+        <div class="user" *ngFor="let user of usersList | filter : searchText : 'Name'" (click)="onUserSelect(user)">
+            <!-- <span>{{user.Name}}</span> -->
+            <span appSearchHighlight [value]="user.Name" [searchText]="searchText" routerLink="./{{user.Id}}">{{user.Name}}</span>
+            <button type="submit" class="update-btn" (click)="updateUser(user)">Update</button>
+        </div>
+        <div class="add-user" *ngIf="!showBasedOnGroups">
+            <button type="submit" (click)="showUserCreation()">Add User</button>
+        </div>
+    </section>
+    <section>
+        <!-- <app-user-view [userId]="selectedUserId"></app-user-view> -->
+        <router-outlet></router-outlet>
+    </section>
+</div>
+<app-user-creation *ngIf="showUserCreationComp && !showBasedOnGroups" [userId]="selectedUserId"></app-user-creation>

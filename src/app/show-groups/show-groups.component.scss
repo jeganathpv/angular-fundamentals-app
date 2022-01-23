@@ -1,0 +1,8 @@
+.groups{
+    display: flex;
+    flex-direction: column;
+    .group{
+        background-color: burlywood;
+        padding: 10px;
+    }
+}

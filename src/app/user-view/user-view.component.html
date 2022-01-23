@@ -1,0 +1,32 @@
+<div *ngIf="userDetail; else default" class="container">
+    <div class="detail">
+        <div class="row">
+            <span class="title">Name</span>
+            <span class="value">{{userDetail.Name}}</span>
+        </div>
+        <div class="row">
+            <span class="title">Age</span>
+            <span class="value">{{userDetail.Age}}</span>
+        </div>
+        <div class="row">
+            <span class="title">Email</span>
+            <span class="value">{{userDetail.Email}}</span>
+        </div>
+        <div class="row">
+            <span class="title">Address</span>
+            <span class="value">{{userDetail.Address}}</span>
+        </div>
+        <div class="row">
+            <span class="title">Status</span>
+            <span class="value" [innerHtml]="userDetail.IsActive ? 'Active' : 'Deactive'"></span>
+        </div>
+    </div>
+
+</div>
+
+<ng-template #default>
+    <div class="container">
+        <span>User not found!!!</span>
+    </div>
+
+</ng-template>

@@ -1,0 +1,6 @@
+<div class="header">
+    <div class="header-tab" *ngFor="let header of headers" (click)="onHeaderChange(header)" [ngClass]="header.IsActive ? 'active' : ''">
+        <span routerLink="{{header.Path}}">{{header.Name}}</span>
+        <!-- <span>{{header.Name}}</span> -->
+    </div>
+</div>

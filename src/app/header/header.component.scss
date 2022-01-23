@@ -1,0 +1,15 @@
+.header{
+   display: flex;
+    justify-content: space-around;
+    background-color: #5656ff;
+    .header-tab{
+        padding: 10px;
+        color: white;
+    }
+
+    .active{
+        font-weight: bold;
+        color: black;
+    }
+}
+

@@ -1,0 +1,29 @@
+.users-list{
+    padding: 10px;
+    cursor: pointer;
+
+    .user{
+        padding: 5px;
+        border: 1px solid black;
+        width: 200px;
+    }
+
+    .active{
+        font-weight: bold;
+    }
+}
+
+.container{
+    display: flex;
+}
+
+.search {
+    padding: 5px;
+    input {
+        width: 200px;
+    }
+}
+
+.update-btn{
+    float: right;
+}

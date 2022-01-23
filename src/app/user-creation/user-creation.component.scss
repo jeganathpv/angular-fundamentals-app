@@ -1,0 +1,36 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 400px;
+    .row-group{
+        padding: 5px;
+        label{
+            padding-right: 10px;
+        }
+        input{
+            float: right;
+        }
+    }
+}
+
+.submit{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: bisque;
+    width: 500px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+
+.error{
+    background-color: red;
+}

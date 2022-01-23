@@ -1,0 +1,19 @@
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 20px 100px;
+}
+
+.detail{
+    border: 1px solid black;
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        .title{
+            color: darkblue;
+            
+        }
+    }
+}

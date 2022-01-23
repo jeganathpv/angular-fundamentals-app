@@ -1,0 +1,21 @@
+<app-header (activeTab)="onTabChange($event)"></app-header>
+
+<!-- <ng-container [ngSwitch]="selectedTab">
+    <div *ngSwitchCase="'About'">
+        <app-about></app-about>
+    </div>
+    <div *ngSwitchCase="'Users'">
+        <app-users-list></app-users-list>
+    </div>
+    <div *ngSwitchCase="'Contact'">
+        <app-contact></app-contact>
+    </div>
+    <div *ngSwitchCase="'Settings'">
+        <app-settings></app-settings>
+    </div>
+    <div *ngSwitchDefault>
+        <app-home></app-home>
+    </div>
+</ng-container> -->
+
+<router-outlet></router-outlet>
