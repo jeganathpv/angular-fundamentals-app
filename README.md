@@ -1,4 +1,17 @@
-# TrainingApp
+# Angular fundamental concepts
+
+This project contains Angular's below fundamental concepts. You can use this repository for the learning purpose.
+
+- Routing
+- Dependency Injection
+- Directive
+- Pipe
+- Forms
+- Content Variables
+- Observables
+- Services
+- Subjects
+- Sharing data between the components
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
